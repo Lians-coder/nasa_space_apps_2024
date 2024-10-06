@@ -1,0 +1,57 @@
+/* Content Container */
+.content-container {
+    display: flex;
+    align-items: center; /* Vertically centers content */
+    justify-content: space-between; /* Space between left and right content */
+    padding: 30px; /* Padding inside the container */
+    background: linear-gradient(135deg, rgba(0, 31, 63, 0.8) 0%, rgba(0, 51, 102, 0.8) 50%, rgba(0, 64, 128, 0.8) 100%); /* Semi-transparent background gradient */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+}
+
+/* Intro Text Styling */
+.intro-text {
+    flex: 1; /* Take up available space */
+    padding: 20px; /* Add padding inside the text container */
+    margin-right: 20px; /* Spacing between text and image */
+}
+
+.intro-text h1 {
+    font-size: 2rem; /* Heading font size */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.intro-text p {
+    font-size: 1.2rem; /* Paragraph font size */
+    line-height: 1.6; /* Improve readability with increased line height */
+    padding-right: 20px; /* Additional padding on the right */
+}
+
+/* Image Container Styling */
+.image-container {
+    flex: 1; /* Take up available space */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the image */
+    padding: 20px; /* Padding inside the image container */
+}
+
+.image-container img {
+    width: 100%; /* Responsive width */
+    max-width: 300px; /* Maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for the image */
+}
+
+/* Ensure All Elements Have Padding */
+h1, p, img {
+    padding: 10px; /* General padding for each element */
+}
+
+/* Footer Styling */
+footer {
+    padding: 20px; /* Padding inside the footer */
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
+    text-align: center; /* Centered text */
+    color: #f2f2f2; /* Light text for contrast */
+}
