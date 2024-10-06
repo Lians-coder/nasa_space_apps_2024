@@ -1,6 +1,0 @@
-flask
-flask-caching
-Flask-Session
-astroquery
-astropy
-matplotlib
