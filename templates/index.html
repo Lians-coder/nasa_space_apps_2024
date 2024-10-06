@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <div class="content-container d-flex align-items-center justify-content-between">\
+        <div class="image-container" style="flex: 1; display: flex; justify-content: center;">
+            <img src="static/assets/preview/LHS_1140_b_exosky.png" alt="Random ExoSky Map" class="img-fluid" style="width: 100%; max-width: 800px; height: auto;">
+        </div>
+        <div class="intro-text mb-5" style="flex: 1; padding-right: 20px;">
+            <h1 class="display-4">Welcome to the Exoplanet Sky Map Generator!</h1>
+            <p class="lead">
+                Explore the cosmos like never before! Our Exoplanet Sky Map Generator allows you to visualize the sky of distant exoplanets.
+                Simply enter the name of an exoplanet, and our tool will create stunning maps of visible stars.
+            </p>
+            <p class="lead">
+                Whether you're a curious stargazer or a seasoned astronomer, embark on a journey through space and discover the wonders of our universe.
+                Let's uncover the ExoSky together!
+            </p>
+        </div>
+    </div>
+{% endblock %}
