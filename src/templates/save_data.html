@@ -1,0 +1,20 @@
+{% extends layout.html %}
+
+{% block title %}
+    Save Data for Later Use
+{% endblock%}
+
+{% block head %}
+    <script type="module" src="{{ url_for('static', filename='js/cashe.js') }}"></script>
+{% endblock %}
+
+{% block main %}
+<form action="/save_data" method="POST">
+    <!-- Hidden input to store JSON data -->
+    <input type="hidden" id="cachedDataInput" name="cachedData">
+
+    <!-- Button to trigger saving the cached data -->
+    <button class="btn btn-primary" type="button" id="saveBtn">Save Cached Data</button>
+    <button class="btn btn-primary" type="submit">Download JSON</button>
+</form>
+{% endblock %}
